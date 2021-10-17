@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Neurology",
+    "image": "./images/neurology.png",
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+  },
+  {
+    "id": 2,
+    "name": "Pulmonology",
+    "image": "./images/lungs.png",
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+  },
+  {
+    "id": 3,
+    "name": "Cardiology",
+    "image": "./images/heart-disease.png",
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+  },
+  {
+    "id": 4,
+    "name": "Gynecology",
+    "image": "./images/vagina.png",
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+  },
+  {
+    "id": 5,
+    "name": "Kidney",
+    "image": "./images/kidney.png",
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+  },
+  {
+    "id": 6,
+    "name": "Best Treatment",
+    "image": "./images/treatment.png",
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+  }
+]

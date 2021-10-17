@@ -1,0 +1,57 @@
+.banner {
+  background-image: url(../../../../images/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+
+.bnr-dtls {
+  width: 530px;
+  padding: 30px;
+}
+
+.bnr-dtls h1 {
+  color: #474747;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bnr-dtls button {
+  background-color: #1a9bdc;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 5px 20px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: 0.3s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.bnr-dtls button:hover {
+  background-color: transparent;
+  border: 2px solid #1a9bdc;
+  color: #1a9bdc;
+}
+
+/* for Responsiveness */
+@media only screen and (max-width: 688px) {
+  .banner {
+    padding: 60px;
+  }
+  .bnr-dtls {
+    width: 300px;
+    padding: 0px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+}
