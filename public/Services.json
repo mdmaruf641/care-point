@@ -3,36 +3,42 @@
     "id": 1,
     "name": "Neurology",
     "image": "./images/neurology.png",
-    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
+    "price": "$72.55"
   },
   {
     "id": 2,
     "name": "Pulmonology",
     "image": "./images/lungs.png",
-    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
+    "price": "$38.58"
   },
   {
     "id": 3,
     "name": "Cardiology",
     "image": "./images/heart-disease.png",
-    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
+    "price": "$80.46"
   },
   {
     "id": 4,
     "name": "Gynecology",
     "image": "./images/vagina.png",
-    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
+    "price": "$79.46"
   },
   {
     "id": 5,
     "name": "Kidney",
     "image": "./images/kidney.png",
-    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
+    "price": "$78.56"
   },
   {
     "id": 6,
     "name": "Best Treatment",
     "image": "./images/treatment.png",
-    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain"
+    "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
+    "price": "$68.76"
   }
 ]

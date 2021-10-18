@@ -4,6 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Pages/Shared/Header/Header";
 import Home from "./Components/Pages/Home/Home/Home";
 import NotFound from "./Components/Pages/NotFound/NotFound";
+import Team from "./Components/Pages/Team/Team";
+import About from "./Components/Pages/About/About";
+import Contact from "./Components/Pages/Contact/Contact";
+import Login from "./Components/Pages/Login/Login/Login";
+import SignUp from "./Components/Pages/Login/SignUp/SignUp";
+import ServiceDetails from "./Components/Pages/Home/Services/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
@@ -16,6 +22,24 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route path="/team">
+            <Team></Team>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/serviceDetail/:serviceId">
+            <ServiceDetails></ServiceDetails>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signUp">
+            <SignUp></SignUp>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
