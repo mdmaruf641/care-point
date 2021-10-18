@@ -9,7 +9,7 @@ import About from "./Components/Pages/About/About";
 import Contact from "./Components/Pages/Contact/Contact";
 import Login from "./Components/Pages/Login/Login/Login";
 import SignUp from "./Components/Pages/Login/SignUp/SignUp";
-import ServiceDetails from "./Components/Pages/Home/Services/ServiceDetails/ServiceDetails";
+import ServiceDetails from "./Components/Pages/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
