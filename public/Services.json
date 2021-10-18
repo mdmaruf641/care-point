@@ -2,43 +2,55 @@
   {
     "id": 1,
     "name": "Neurology",
-    "image": "./images/neurology.png",
+    "image": "https://i.ibb.co/HxsWtvh/neurology.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "price": "$72.55"
+    "dtlsImg": "https://cdn-icons-png.flaticon.com/512/4006/4006171.png",
+    "price": "$72.55",
+    "doctor": "  William Bretly"
   },
   {
     "id": 2,
     "name": "Pulmonology",
-    "image": "./images/lungs.png",
+    "image": "https://i.ibb.co/fNpHgJv/lungs.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "price": "$38.58"
+    "dtlsImg": "https://cdn-icons-png.flaticon.com/512/4006/4006309.png",
+    "price": "$38.58",
+    "doctor": "  Edward Thomas Hardy"
   },
   {
     "id": 3,
     "name": "Cardiology",
-    "image": "./images/heart-disease.png",
+    "image": "https://i.ibb.co/zQt8z62/heart-disease.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "price": "$80.46"
+    "dtlsImg": "https://cdn-icons-png.flaticon.com/512/1432/1432423.png",
+    "price": "$80.46",
+    "doctor": "  Thomas Hardy"
   },
   {
     "id": 4,
     "name": "Gynecology",
-    "image": "./images/vagina.png",
+    "image": "https://i.ibb.co/KWCDQF0/vagina.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "price": "$79.46"
+    "dtlsImg": "https://cdn-icons-png.flaticon.com/512/4006/4006071.png",
+    "price": "$79.46",
+    "doctor": "  DiCaprio"
   },
   {
     "id": 5,
     "name": "Kidney",
-    "image": "./images/kidney.png",
+    "image": "https://i.ibb.co/RP3yfRt/kidney.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "price": "$78.56"
+    "dtlsImg": "https://cdn-icons.flaticon.com/png/512/508/premium/508734.png?token=exp=1634590134~hmac=01248ab62f607e81d97fb5187db94b3a",
+    "price": "$78.56",
+    "doctor": "  Michel Jouel"
   },
   {
     "id": 6,
     "name": "Best Treatment",
-    "image": "./images/treatment.png",
+    "image": "https://i.ibb.co/0MhpyYG/treatment.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "price": "$68.76"
+    "dtlsImg": "https://cdn-icons-png.flaticon.com/512/4228/4228736.png",
+    "price": "$68.76",
+    "doctor": "  David McConaughey"
   }
 ]

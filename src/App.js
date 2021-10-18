@@ -32,7 +32,7 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
-          <Route path="/serviceDetail/:serviceId">
+          <Route path="/serviceDetail/:id">
             <ServiceDetails></ServiceDetails>
           </Route>
           <Route path="/login">
