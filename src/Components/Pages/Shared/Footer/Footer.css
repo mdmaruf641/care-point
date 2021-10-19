@@ -1,0 +1,65 @@
+.footer {
+  background-color: #171717;
+  color: #a9a9a9;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 7px 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.footer-links li:hover {
+  color: #1a9bdc;
+  margin-left: 5px;
+}
+
+.footer-input {
+  background-color: transparent;
+  border: none;
+  padding: 2px 5px;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  outline: none;
+}
+
+.footer-btn {
+  background-color: #1a9bdc;
+  border: 2px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.3s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: transparent;
+  border: 2px solid #1a9bdc;
+  color: #1a9bdc;
+}
+.mini-footer {
+  background-color: #1a1a1a;
+}
+
+.mini-footer p {
+  color: #fff;
+}

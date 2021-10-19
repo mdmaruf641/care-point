@@ -1,10 +1,10 @@
-.login-inner {
+.form-inner {
   width: 400px;
   border: 2px solid gray;
   margin: auto;
   padding: 20px;
 }
-.login-inner h1 {
+.form-inner h1 {
   color: #1a9bdc;
   margin-bottom: 30px;
 }
@@ -40,7 +40,7 @@
   margin-right: 10px;
 }
 
-.login-inner p {
+.form-inner p {
   font-size: 18px;
   margin-top: 15px;
   font-weight: 500;
