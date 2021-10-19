@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
 import { Link } from "react-router-dom";
 import "./SignUp.css";
 
 const SignUp = () => {
+  const auth = getAuth();
   // state for name
   const [name, setName] = useState("");
   // state for email
   const [email, setEmail] = useState("");
   // state for password
   const [password, setPassword] = useState("");
+  // state for handle password length
+  const [error, setError] = useState("");
 
   // handle name on Change
   const handleNameChange = (e) => {
@@ -28,6 +33,23 @@ const SignUp = () => {
   // for register button
   const handleRegister = (e) => {
     e.preventDefault();
+    if (password.length < 6) {
+      setError("Password Must be at least 6 characters long");
+      return;
+    }
+    if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+      setError("Password must contain 2 upper case ");
+      return;
+    }
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
     console.log(name, email, password);
   };
 
@@ -62,7 +84,7 @@ const SignUp = () => {
                 placeholder="Password"
               />
             </Form.Group>
-
+            <div className="text-danger my-1">{error}</div>
             <Button variant="primary" type="submit">
               Submit
             </Button>

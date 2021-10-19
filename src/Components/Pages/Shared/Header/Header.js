@@ -40,7 +40,24 @@ const Header = () => {
               <Nav.Link to="/" className="nav-items user-name">
                 {user?.displayName}
               </Nav.Link>
-              {user?.email ? (
+              {!user?.email ? (
+                <>
+                  <Nav.Link
+                    as={HashLink}
+                    to="/login"
+                    className="nav-items text-dark"
+                  >
+                    Login
+                  </Nav.Link>
+                  <Nav.Link
+                    as={HashLink}
+                    to="/signUp"
+                    className="nav-items signUp text-white"
+                  >
+                    Sign Up
+                  </Nav.Link>
+                </>
+              ) : (
                 <Nav.Link
                   onClick={logOut}
                   as={HashLink}
@@ -49,23 +66,7 @@ const Header = () => {
                 >
                   Log Out
                 </Nav.Link>
-              ) : (
-                <Nav.Link
-                  as={HashLink}
-                  to="/login"
-                  className="nav-items text-dark"
-                >
-                  Login
-                </Nav.Link>
               )}
-
-              <Nav.Link
-                as={HashLink}
-                to="/signUp"
-                className="nav-items signUp text-white"
-              >
-                Sign Up
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
