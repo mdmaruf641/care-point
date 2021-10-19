@@ -16,7 +16,7 @@ const Service = (props) => {
       <img className="w-50" src={image} alt="" />
       <h4 className="mt-3">{name}</h4>
       <p>{description}</p>
-      <button onClick={handleDetailsBtn}>Get Appointment</button>
+      <button onClick={handleDetailsBtn}>Service Details</button>
     </div>
   );
 };

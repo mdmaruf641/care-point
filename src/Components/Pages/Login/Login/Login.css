@@ -1,0 +1,50 @@
+.login-inner {
+  width: 400px;
+  border: 2px solid gray;
+  margin: auto;
+  padding: 20px;
+}
+.login-inner h1 {
+  color: #1a9bdc;
+  margin-bottom: 30px;
+}
+.google-btn {
+  display: block;
+  margin: auto;
+  background-color: #1a9bdc;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.google-btn:hover {
+  background-color: transparent;
+  border: 2px solid #1a9bdc;
+  color: #1a9bdc;
+}
+
+.google-btn img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.login-inner p {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.signUp-link {
+  text-decoration: none;
+}

@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css";
 import logo from "../../../../images/logo.png";
 import { HashLink } from "react-router-hash-link";
+import useAuth from "./../../../../Hooks/UseAuth";
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
       <Navbar id="home" collapseOnSelect expand="lg" bg="white" variant="light">
         <Container>
           <Navbar.Brand href="#home">
-            <img class="w-100" src={logo} alt="" />
+            <img className="w-100" src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -35,6 +36,17 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
+              <Navbar.Text>
+                Signed in as: <a></a>
+              </Navbar.Text>
+              <Nav.Link
+                as={HashLink}
+                to="/login"
+                className="nav-items text-dark"
+              >
+                Log Out
+              </Nav.Link>
+
               <Nav.Link
                 as={HashLink}
                 to="/login"
