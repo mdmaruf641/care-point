@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 import google from "../../../../images/google.png";
 import useAuth from "./../../../../Hooks/UseAuth";
-import useFirebase from "./../../../../Hooks/UseFirebase";
 
 const Login = () => {
-  const { signInUsingGoogle } = useFirebase();
+  const { signInUsingGoogle } = useAuth();
   return (
     <div>
       <Container>
