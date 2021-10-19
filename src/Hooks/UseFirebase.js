@@ -4,6 +4,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   signOut,
+  createUserWithEmailAndPassword,
 } from "firebase/auth";
 import initializeAuthentication from "./../Components/Pages/Login/Firebase/Firebase.init";
 import { useState, useEffect } from "react";
@@ -11,10 +12,12 @@ import { useState, useEffect } from "react";
 initializeAuthentication();
 
 const useFirebase = () => {
-  // for user
+  // for handle user
   const [user, setUser] = useState({});
-  // for loading
+
+  // for handle loading
   const [isLoading, setIsLoading] = useState(true);
+
   // google sign in handle
   const googleProvider = new GoogleAuthProvider();
   const auth = getAuth();
