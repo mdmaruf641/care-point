@@ -14,3 +14,7 @@
 .signUp:hover {
   background-color: #3fb6c6;
 }
+
+.user-name {
+  color: #1a9bdc !important;
+}

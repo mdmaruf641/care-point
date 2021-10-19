@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AuthProvider from "./Contexts/AuthProvider";
 import Header from "./Components/Pages/Shared/Header/Header";
 import Home from "./Components/Pages/Home/Home/Home";
 import NotFound from "./Components/Pages/NotFound/NotFound";
@@ -10,7 +11,7 @@ import Contact from "./Components/Pages/Contact/Contact";
 import Login from "./Components/Pages/Login/Login/Login";
 import SignUp from "./Components/Pages/Login/SignUp/SignUp";
 import ServiceDetails from "./Components/Pages/ServiceDetails/ServiceDetails";
-import AuthProvider from "./Contexts/AuthProvider";
+import PrivateRoute from "./Components/Pages/Login/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -34,9 +35,9 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            <Route path="/serviceDetail/:id">
+            <PrivateRoute path="/serviceDetail/:id">
               <ServiceDetails></ServiceDetails>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>

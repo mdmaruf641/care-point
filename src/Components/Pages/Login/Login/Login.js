@@ -1,9 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useFirebase from "../../../../Hooks/UseFirebase";
 import "./Login.css";
 import google from "../../../../images/google.png";
+import useAuth from "./../../../../Hooks/UseAuth";
+import useFirebase from "./../../../../Hooks/UseFirebase";
 
 const Login = () => {
   const { signInUsingGoogle } = useFirebase();

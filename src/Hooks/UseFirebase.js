@@ -11,18 +11,26 @@ import { useState, useEffect } from "react";
 initializeAuthentication();
 
 const useFirebase = () => {
+  // for user
   const [user, setUser] = useState({});
+  // for loading
+  const [isLoading, setIsLoading] = useState(true);
   // google sign in handle
   const googleProvider = new GoogleAuthProvider();
   const auth = getAuth();
 
   const signInUsingGoogle = (e) => {
     e.preventDefault();
-    signInWithPopup(auth, googleProvider).then((result) => {
-      setUser(result.user);
-    });
+    setIsLoading(true);
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+        console.log(result.user);
+      })
+      .finally(() => setIsLoading(false));
   };
 
+  // user state changed
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -30,17 +38,21 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
     return () => unSubscribe;
   }, []);
 
   // for log out implement
   const logOut = () => {
-    signOut(auth).then(() => {});
+    signOut(auth)
+      .then(() => {})
+      .finally(() => setIsLoading(false));
   };
 
   return {
     user,
+    isLoading,
     signInUsingGoogle,
     logOut,
   };
