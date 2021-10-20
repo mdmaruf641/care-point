@@ -37,28 +37,11 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              {!user?.email ? (
-                <>
-                  <Nav.Link
-                    as={HashLink}
-                    to="/login"
-                    className="nav-items text-dark"
-                  >
-                    Login
-                  </Nav.Link>
-                  <Nav.Link
-                    as={HashLink}
-                    to="/signUp"
-                    className="nav-items signUp text-white"
-                  >
-                    Sign Up
-                  </Nav.Link>
-                </>
-              ) : (
+              {user?.email ? (
                 <>
                   <Nav.Link to="/" className="nav-items user-name">
                     <img
-                      style={{ width: "45px", borderRadius: "50%" }}
+                      style={{ width: "40px", borderRadius: "50%" }}
                       src={user.photoURL}
                       alt=""
                     />
@@ -70,9 +53,26 @@ const Header = () => {
                     onClick={logOut}
                     as={HashLink}
                     to="/"
-                    className="nav-items text-dark"
+                    className="nav-items  text-dark"
                   >
                     Log Out
+                  </Nav.Link>
+                </>
+              ) : (
+                <>
+                  <Nav.Link
+                    as={HashLink}
+                    to="/login"
+                    className="nav-items  text-dark"
+                  >
+                    Login
+                  </Nav.Link>
+                  <Nav.Link
+                    as={HashLink}
+                    to="/signUp"
+                    className="nav-items signUp text-white"
+                  >
+                    Sign Up
                   </Nav.Link>
                 </>
               )}
