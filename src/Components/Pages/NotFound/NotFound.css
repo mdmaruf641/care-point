@@ -1,0 +1,8 @@
+.error {
+  margin: 50px 0;
+}
+.error h1 {
+  color: #1a9bdc;
+  font-size: 70px;
+  font-weight: 700;
+}

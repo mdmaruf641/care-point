@@ -1,4 +1,4 @@
-.about-heading h2 {
+.section-heading h2 {
   color: #1a9bdc;
 }
 .single-items {
@@ -59,4 +59,28 @@
 
 .title {
   color: #6f6f6e;
+}
+
+@media only screen and (max-width: 688px) {
+  .single-items {
+    margin: auto;
+  }
+
+  .icon {
+    margin-top: 6px;
+    margin-left: 9px;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .single-items {
+    margin: auto;
+  }
+  .icon {
+    margin-top: 6px;
+    margin-left: 9px;
+  }
+  .about-img {
+    height: 800px;
+  }
 }
