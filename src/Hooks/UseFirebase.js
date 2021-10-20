@@ -26,13 +26,13 @@ const useFirebase = () => {
   const [photo, setPhoto] = useState("");
   // for handle error
   const [error, setError] = useState("");
-
   // for handle loading
   const [isLoading, setIsLoading] = useState(true);
 
+  const auth = getAuth();
+
   // google sign in handle
   const googleProvider = new GoogleAuthProvider();
-  const auth = getAuth();
 
   // google sign in
   const signInUsingGoogle = (e) => {
@@ -49,14 +49,14 @@ const useFirebase = () => {
       .finally(() => setIsLoading(false));
   };
 
-  // Email Sign in
+  // handle Email Sign in
   const signInUsingEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
-        console.log(result.user);
+        alert("You are successfully Login");
       })
       .catch((error) => {
         setError(error.message);
@@ -70,10 +70,9 @@ const useFirebase = () => {
     setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        handleNameAndPhoto();
         setUser(result.user);
         // for set user name and photo after sign up
-
+        handleNameAndPhoto();
         alert("You are successfully signed up");
       })
       .catch((error) => {
@@ -93,25 +92,6 @@ const useFirebase = () => {
         setError(error.message);
       });
   };
-  // user state changed
-  useEffect(() => {
-    const unSubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user);
-      } else {
-        setUser({});
-      }
-      setIsLoading(false);
-    });
-    return () => unSubscribe;
-  }, []);
-
-  // for log out implement
-  const logOut = () => {
-    signOut(auth)
-      .then(() => {})
-      .finally(() => setIsLoading(false));
-  };
 
   // name Handle
   const nameHandle = (e) => {
@@ -129,6 +109,26 @@ const useFirebase = () => {
   const photoHandle = (e) => {
     setPhoto(e?.target.value);
   };
+
+  // for log out implement
+  const logOut = () => {
+    signOut(auth)
+      .then(() => {})
+      .finally(() => setIsLoading(false));
+  };
+
+  // user state changed
+  useEffect(() => {
+    const unSubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser({});
+      }
+      setIsLoading(false);
+    });
+    return () => unSubscribe;
+  }, []);
 
   return {
     user,

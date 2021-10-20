@@ -25,12 +25,12 @@
 }
 
 .service button {
-  background-color: #1a9bdc;
+  background-color: transparent;
+  border: 2px solid #1a9bdc;
+  color: #1a9bdc;
   font-size: 18px;
-  color: #fff;
-  border: 2px solid transparent;
-  padding: 5px 10px;
   font-weight: 500;
+  padding: 5px 10px;
   border-radius: 30px;
   transition: 0.3s;
   -webkit-border-radius: 30px;
@@ -44,7 +44,7 @@
 }
 
 .service button:hover {
-  background-color: transparent;
-  border: 2px solid #1a9bdc;
-  color: #1a9bdc;
+  background-color: #1a9bdc;
+  color: #fff;
+  border: 2px solid transparent;
 }
