@@ -47,9 +47,9 @@
     padding: 60px;
   }
   .bnr-dtls {
-    width: 300px;
+    width: 270px;
     padding: 0px;
-    margin: auto;
+    margin-right: 10px;
   }
 }
 

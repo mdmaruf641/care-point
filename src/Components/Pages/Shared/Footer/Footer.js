@@ -17,27 +17,27 @@ const Footer = () => {
       <div className="footer  py-5 mt-4">
         <Container>
           <Row>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="footer-heading text-start text-white mb-3">
                 <h3>Get in Touch</h3>
               </div>
               <div className="footer-info ps-2">
                 <div className="d-flex ms-4 align-items-center">
-                  <div className=" mr-4  fs-3">{mail}</div>
+                  <div className=" me-4  fs-3">{mail}</div>
                   <div className=" text-start contact-info">
                     <p>maruf.moni.mm@gmail.com</p>
                     <p>maruf.moni.mm@gmail.com</p>
                   </div>
                 </div>
                 <div className="d-flex ms-4 align-items-center my-3">
-                  <div className=" mr-4 fs-3">{phone}</div>
+                  <div className=" me-4 fs-3">{phone}</div>
                   <div className=" text-start contact-info">
                     <p>+880 1641656113</p>
                     <p>+880 1788368262</p>
                   </div>
                 </div>
                 <div className="d-flex ms-4 align-items-center">
-                  <div className=" mr-4 fs-3">{location}</div>
+                  <div className=" me-4 fs-3">{location}</div>
                   <div className=" text-start contact-info">
                     <p>Khulshi, Chittagong,</p>
                     <p>Bangladesh.</p>
@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="footer-heading text-start text-white ps-2 mb-3">
                 <h3>Quick Links</h3>
               </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="footer-heading text-start text-white ps-2 mb-3">
                 <h3>Our Services</h3>
               </div>
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="footer-heading text-start text-white ps-2 mb-3">
                 <h3>Our Services</h3>
               </div>

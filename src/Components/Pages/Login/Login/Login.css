@@ -3,6 +3,7 @@
   border: 2px solid gray;
   margin: auto;
   padding: 20px;
+  margin-top: 20px;
 }
 .form-inner h1 {
   color: #1a9bdc;
@@ -47,4 +48,10 @@
 }
 .signUp-link {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 688px) {
+  .form-inner {
+    width: 300px;
+  }
 }
