@@ -8,7 +8,7 @@ const ServiceDetails = () => {
   const [serviceData, setServiceData] = useState({});
 
   useEffect(() => {
-    fetch("/services.json")
+    fetch("/Services.json")
       .then((res) => res.json())
       .then((data) => {
         const detailsItems = data.find((details) => details.id == id);

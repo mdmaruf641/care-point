@@ -1,6 +1,6 @@
-# Care Point | Medical Special Website.
+# Care Point | Medical-Based Bebsite.
 
-### View Project in Netlify
+### View Project in Live Server
 
 [Care Point with Netlify](https://care-point-by-maruf641.netlify.app/).
 

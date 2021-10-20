@@ -35,12 +35,13 @@
     "price": "$79.46",
     "doctor": "  DiCaprio"
   },
+
   {
     "id": 5,
     "name": "Kidney",
     "image": "https://i.ibb.co/RP3yfRt/kidney.png",
     "description": "Who Chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain",
-    "dtlsImg": "https://cdn-icons.flaticon.com/png/512/508/premium/508734.png?token=exp=1634590134~hmac=01248ab62f607e81d97fb5187db94b3a",
+    "dtlsImg": "https://i.ibb.co/LxyRy1p/kidney.png",
     "price": "$78.56",
     "doctor": "  Michel Jouel"
   },
