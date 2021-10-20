@@ -37,9 +37,6 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link to="/" className="nav-items user-name">
-                {user?.displayName}
-              </Nav.Link>
               {!user?.email ? (
                 <>
                   <Nav.Link
@@ -58,14 +55,26 @@ const Header = () => {
                   </Nav.Link>
                 </>
               ) : (
-                <Nav.Link
-                  onClick={logOut}
-                  as={HashLink}
-                  to="/"
-                  className="nav-items text-dark"
-                >
-                  Log Out
-                </Nav.Link>
+                <>
+                  <Nav.Link to="/" className="nav-items user-name">
+                    <img
+                      style={{ width: "45px", borderRadius: "50%" }}
+                      src={user.photoURL}
+                      alt=""
+                    />
+                  </Nav.Link>
+                  <Nav.Link to="/" className="nav-items user-name">
+                    {user?.displayName}
+                  </Nav.Link>
+                  <Nav.Link
+                    onClick={logOut}
+                    as={HashLink}
+                    to="/"
+                    className="nav-items text-dark"
+                  >
+                    Log Out
+                  </Nav.Link>
+                </>
               )}
             </Nav>
           </Navbar.Collapse>

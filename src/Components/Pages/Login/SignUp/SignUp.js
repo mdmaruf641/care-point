@@ -1,68 +1,19 @@
-import React, { useState } from "react";
-import { Button, Container, Form } from "react-bootstrap";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-
-import { Link } from "react-router-dom";
+import React from "react";
 import "./SignUp.css";
+import { Button, Container, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
-  const auth = getAuth();
-  // state for name
-  const [name, setName] = useState("");
-  // state for email
-  const [email, setEmail] = useState("");
-  // state for password
-  const [password, setPassword] = useState("");
-  // state for handle password length
-  const [error, setError] = useState("");
-
-  // handle name on Change
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-  // handle email on Change
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  // handle password on Change
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  // for register button
-  const handleRegister = (e) => {
-    e.preventDefault();
-    if (password.length < 6) {
-      setError("Password Must be at least 6 characters long");
-      return;
-    }
-    if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-      setError("Password must contain 2 upper case ");
-      return;
-    }
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
-        setError("");
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
-    console.log(name, email, password);
-  };
-
   return (
     <div>
       <Container>
         <div className="form-inner">
           <h1>Please Register</h1>
 
-          <Form onSubmit={handleRegister}>
+          <Form /* onSubmit={handleRegister} */>
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Control
-                onChange={handleNameChange}
+                /* onChange={handleNameChange} */
                 type="text"
                 required
                 placeholder="Enter Name"
@@ -70,7 +21,7 @@ const SignUp = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control
-                onChange={handleEmailChange}
+                /* onChange={handleEmailChange} */
                 type="email"
                 required
                 placeholder="Enter email"
@@ -78,13 +29,13 @@ const SignUp = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Control
-                onChange={handlePasswordChange}
+                /* onChange={handlePasswordChange} */
                 type="password"
                 required
                 placeholder="Password"
               />
             </Form.Group>
-            <div className="text-danger my-1">{error}</div>
+            <div className="text-danger my-1">{/* {error} */}</div>
             <Button variant="primary" type="submit">
               Submit
             </Button>

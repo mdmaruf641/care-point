@@ -1,13 +1,18 @@
 import React from "react";
-
-import { Button, Container, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "./Login.css";
+import { Button, Container, Form } from "react-bootstrap";
 import google from "../../../../images/google.png";
+import { Link } from "react-router-dom";
 import useAuth from "./../../../../Hooks/UseAuth";
 
 const Login = () => {
-  const { signInUsingGoogle } = useAuth();
+  const {
+    signInUsingGoogle,
+    signInUsingEmail,
+    emailHandle,
+    passwordHandle,
+    error,
+  } = useAuth();
   return (
     <div>
       <Container>
@@ -15,15 +20,23 @@ const Login = () => {
           <h1>Please Login</h1>
 
           {/* email login items */}
-          <Form>
+          <Form onSubmit={signInUsingEmail}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control
+                onBlur={emailHandle}
+                type="email"
+                placeholder="Enter email"
+              />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control
+                onBlur={passwordHandle}
+                type="password"
+                placeholder="Password"
+              />
             </Form.Group>
-
+            <div className="text-danger">{error}</div>
             <Button variant="primary" type="submit">
               Submit
             </Button>

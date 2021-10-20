@@ -1,11 +1,20 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone,
+  faLocationArrow,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  const mail = <FontAwesomeIcon icon={faEnvelope} />;
+  const phone = <FontAwesomeIcon icon={faPhone} />;
+  const location = <FontAwesomeIcon icon={faLocationArrow} />;
   return (
     <div>
-      <div className="footer py-5 mt-4">
+      <div className="footer  py-5 mt-4">
         <Container>
           <Row>
             <div className="col-lg-3">
@@ -13,23 +22,23 @@ const Footer = () => {
                 <h3>Get in Touch</h3>
               </div>
               <div className="footer-info ps-2">
-                <div className="row">
-                  <div className="col-lg-2">hi</div>
-                  <div className="col-lg-10 text-start contact-info">
+                <div className="d-flex ms-4 align-items-center">
+                  <div className=" mr-4  fs-3">{mail}</div>
+                  <div className=" text-start contact-info">
                     <p>maruf.moni.mm@gmail.com</p>
                     <p>maruf.moni.mm@gmail.com</p>
                   </div>
                 </div>
-                <div className="row my-3">
-                  <div className="col-lg-2">hi</div>
-                  <div className="col-lg-10 text-start contact-info">
+                <div className="d-flex ms-4 align-items-center my-3">
+                  <div className=" mr-4 fs-3">{phone}</div>
+                  <div className=" text-start contact-info">
                     <p>+880 1641656113</p>
                     <p>+880 1788368262</p>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-lg-2">hi</div>
-                  <div className="col-lg-10 text-start contact-info">
+                <div className="d-flex ms-4 align-items-center">
+                  <div className=" mr-4 fs-3">{location}</div>
+                  <div className=" text-start contact-info">
                     <p>Khulshi, Chittagong,</p>
                     <p>Bangladesh.</p>
                   </div>
