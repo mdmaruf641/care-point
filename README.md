@@ -16,10 +16,11 @@ the sooner he will recover.
 
 ## Described the below about this site:
 
-1.  This is a hospital website.
-2.  This site has been created using React, JSX, react-bootstrap, Firebase, and
+1.  This is a front-end-based hospital website.
+2.  This site has a login and register authentication system by firebase.
+3.  This site has been created using React, JSX, react-bootstrap, Firebase, and
     Vanilla CSS.
-3.  Any user to know the details of service, he has to log in first.
-4.  If a user is not registered, he has to register first to know service
+4.  Any user to know the details of service, he has to log in first.
+5.  If a user is not registered, he has to register first to know service
     details
-5.  With this site, users can take any information about this hospital.
+6.  With this site, users can take any information about this hospital.
